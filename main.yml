@@ -66,6 +66,13 @@ blocks:
           - '{{ if gt .Ahead 0 }}cyan{{ end }}'
           - '{{ if gt .Behind 0 }}orange{{ end }}'
 
+      - type: hg
+        style: plain
+        foreground: "#8BD100"
+        properties:
+          branch_icon: " "
+        template: "<b>({{ .Branch }})</b> "
+
       - type: text
         style: plain
         foreground: "#FFEA00"
